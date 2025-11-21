@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gentlemen's Cut - Barber Shop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    
+    <!-- Hero Section -->
+    <div class="relative h-screen">
+        <div class="absolute inset-0">
+            <img
+                src="https://images.unsplash.com/photo-1627238772768-e3d0ccb1adb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiYXJiZXIlMjBzaG9wJTIwaW50ZXJpb3J8ZW58MXx8fHwxNzYyODcwNTQ1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                alt="Barber shop interior"
+                class="w-full h-full object-cover"
+            />
+            <div class="absolute inset-0 bg-black/60"></div>
+        </div>
+        
+        <nav class="relative z-10 flex items-center justify-between px-6 py-6 lg:px-12">
+            <div class="flex items-center gap-2 text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="6" cy="6" r="3"></circle>
+                    <path d="M8.12 8.12 12 12"></path>
+                    <path d="M20 4 8.12 15.88"></path>
+                    <circle cx="6" cy="18" r="3"></circle>
+                    <path d="M14.8 14.8 20 20"></path>
+                </svg>
+                <span class="text-xl">The Gentlemen's Cut</span>
+            </div>
+            <div class="hidden md:flex items-center gap-8 text-white">
+                <a href="#services" class="hover:text-amber-500 transition">Services</a>
+                <a href="#about" class="hover:text-amber-500 transition">About</a>
+                <a href="#pricing" class="hover:text-amber-500 transition">Pricing</a>
+                <a href="#gallery" class="hover:text-amber-500 transition">Gallery</a>
+                <a href="#contact" class="hover:text-amber-500 transition">Contact</a>
+            </div>
+        </nav>
+
+        <div class="relative z-10 flex flex-col items-center justify-center h-[calc(100%-80px)] text-center text-white px-6">
+            <h1 class="text-5xl md:text-7xl mb-6 max-w-4xl">
+                Classic Cuts, Modern Style
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl text-gray-200">
+                Experience the art of traditional barbering with a contemporary edge
+            </p>
+            <a href="#contact" class="inline-flex items-center justify-center rounded-md bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 transition">
+                Book Appointment
+            </a>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-6 lg:px-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl mb-4">Our Services</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Premium grooming services tailored to the modern gentleman
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Service Card 1 -->
+                <div class="bg-white rounded-lg border shadow-sm hover:shadow-lg transition-shadow p-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-600 mb-4">
+                        <circle cx="6" cy="6" r="3"></circle>
+                        <path d="M8.12 8.12 12 12"></path>
+                        <path d="M20 4 8.12 15.88"></path>
+                        <circle cx="6" cy="18" r="3"></circle>
+                        <path d="M14.8 14.8 20 20"></path>
+                    </svg>
+                    <h3 class="text-xl mb-2">Classic Haircut</h3>
+                    <p class="text-sm text-gray-600">Traditional scissor cut with precision and attention to detail. Includes consultation, wash, cut, and style.</p>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-white rounded-lg border shadow-sm hover:shadow-lg transition-shadow p-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-600 mb-4">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                    </svg>
+                    <h3 class="text-xl mb-2">Hot Towel Shave</h3>
+                    <p class="text-sm text-gray-600">Luxurious straight razor shave with hot towel treatment for the smoothest finish.</p>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-white rounded-lg border shadow-sm hover:shadow-lg transition-shadow p-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-600 mb-4">
+                        <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path>
+                    </svg>
+                    <h3 class="text-xl mb-2">Beard Grooming</h3>
+                    <p class="text-sm text-gray-600">Expert beard trimming, shaping, and conditioning to maintain your perfect look.</p>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-white rounded-lg border shadow-sm hover:shadow-lg transition-shadow p-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-600 mb-4">
+                        <path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path>
+                        <path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path>
+                        <path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path>
+                    </svg>
+                    <h3 class="text-xl mb-2">Hair & Beard Combo</h3>
+                    <p class="text-sm text-gray-600">Complete grooming package combining haircut and beard styling for a polished appearance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 lg:px-12">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl md:text-5xl mb-6">About Us</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Established in 2010, The Gentlemen's Cut has been providing exceptional grooming services to discerning clients who appreciate the finer things in life. Our skilled barbers blend traditional techniques with modern styles to create the perfect look for every client.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8">
+                        We believe that a great haircut is more than just a service—it's an experience. From the moment you walk through our doors, you'll be treated to old-world hospitality combined with contemporary expertise.
+                    </p>
+                    
+                    <div class="grid grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-600 mx-auto mb-2">
+                                <circle cx="12" cy="8" r="6"></circle>
+                                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+                            </svg>
+                            <div class="text-2xl mb-1">15+</div>
+                            <div class="text-sm text-gray-600">Years Experience</div>
+                        </div>
+                        <div class="text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-600 mx-auto mb-2">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <div class="text-2xl mb-1">10K+</div>
+                            <div class="text-sm text-gray-600">Happy Clients</div>
+                        </div>
+                        <div class="text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-600 mx-auto mb-2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            <div class="text-2xl mb-1">7 Days</div>
+                            <div class="text-sm text-gray-600">Open Weekly</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative h-[500px] rounded-lg overflow-hidden shadow-xl">
+                    <img
+                        src="https://images.unsplash.com/photo-1547648946-2b1fd7eab923?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiYXJiZXIlMjBjdXR0aW5nJTIwaGFpcnxlbnwxfHx8fDE3NjI4NDkzNTd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                        alt="Barber at work"
+                        class="w-full h-full object-cover"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 px-6 lg:px-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl mb-4">Pricing</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Choose the package that suits your style and budget
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Pricing Card 1 -->
+                <div class="bg-white rounded-lg border shadow-sm relative">
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl mb-2">Classic Cut</h3>
+                        <p class="text-sm text-gray-600">Perfect for the essentials</p>
+                        <div class="text-4xl mt-4">$35</div>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-600 flex-shrink-0 mt-0.5">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                                <span>Professional haircut</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-600 flex-shrink-0 mt-0.5">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                                <span>Hair wash & style</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-600 flex-shrink-0 mt-0.5">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                                <span>Hot towel treatment</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-600 flex-shrink-0 mt-0.5">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                                <span>Complimentary beverage</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button class="w-full inline-flex items-center justify-center rounded-md border border-gray-300 bg-white px-4 py-2 hover:bg-gray-50 transition">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Pricing Card 2 (Popular) -->
+                <div class="bg-white rounded-lg border-2 border-amber-600 shadow-xl relative">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-amber-600 text-white px-4 py-1 rounded-full text-sm">
+                        Most Popular
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl mb-2">Premium Grooming</h3>
+                        <p class="text-sm text-gray-600">Complete grooming experience</p>
+                        <div class="text-4xl mt-4">$65</div>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-600 flex-shrink-0 mt-0.5">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                                <span>Premium haircut</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-600 flex-shrink-0 mt-0.5">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                                <span>Beard trim & shape</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-600 flex-shrink-0 mt-0.5">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                                <span>Hair wash & style</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-600 flex-shrink-0 mt-0.5">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                                <span>Hot towel treatment</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-600 flex-shrink-0 mt-0.5">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                                <span>Scalp massage</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-600 flex-shrink-0 mt-0.5">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                                <span>Styling products</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button class="w-full inline-flex items-center justify-center rounded-md bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 transition">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Pricing Card 3 -->
+                <div class="bg-white rounded-lg border shadow-sm relative">
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl mb-2">Luxury Package</h3>
+                        <p class="text-sm text-gray-600">Ultimate pampering session</p>
+                        <div class="text-4xl mt-4">$95</div>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-600 flex-shrink-0 mt-0.5">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                                <span>Signature haircut</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-600 flex-shrink-0 mt-0.5">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                                <span>Hot towel shave</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-600 flex-shrink-0 mt-0.5">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                                <span>Beard grooming</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-600 flex-shrink-0 mt-0.5">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                                <span>Hair & scalp treatment</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-600 flex-shrink-0 mt-0.5">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                                <span>Face mask</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-600 flex-shrink-0 mt-0.5">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                                <span>Premium styling products</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-600 flex-shrink-0 mt-0.5">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                                <span>Complimentary drink & snacks</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button class="w-full inline-flex items-center justify-center rounded-md border border-gray-300 bg-white px-4 py-2 hover:bg-gray-50 transition">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 px-6 lg:px-12">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl mb-4">Gallery</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Take a look at our work and our space
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="relative h-80 rounded-lg overflow-hidden group cursor-pointer">
+                    <img
+                        src="https://images.unsplash.com/photo-1621645582931-d1d3e6564943?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiYXJiZXJzaG9wJTIwc3R5bGluZ3xlbnwxfHx8fDE3NjI4OTg0NTl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                        alt="Barbershop styling"
+                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                    />
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors"></div>
+                </div>
+                <div class="relative h-80 rounded-lg overflow-hidden group cursor-pointer">
+                    <img
+                        src="https://images.unsplash.com/photo-1630827020718-3433092696e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZW5zJTIwaGFpcmN1dHxlbnwxfHx8fDE3NjI5NDg3OTR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                        alt="Men's haircut"
+                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                    />
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors"></div>
+                </div>
+                <div class="relative h-80 rounded-lg overflow-hidden group cursor-pointer">
+                    <img
+                        src="https://images.unsplash.com/photo-1599447068894-089fabc9876c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiZWFyZCUyMGdyb29taW5nfGVufDF8fHx8MTc2Mjk0ODc5NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                        alt="Beard grooming"
+                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                    />
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors"></div>
+                </div>
+                <div class="relative h-80 rounded-lg overflow-hidden group cursor-pointer">
+                    <img
+                        src="https://images.unsplash.com/photo-1678356163587-6bb3afb89679?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiYXJiZXIlMjB0b29sc3xlbnwxfHx8fDE3NjI5NDU3MTJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                        alt="Barber tools"
+                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                    />
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors"></div>
+                </div>
+                <div class="relative h-80 rounded-lg overflow-hidden group cursor-pointer">
+                    <img
+                        src="https://images.unsplash.com/photo-1547648946-2b1fd7eab923?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiYXJiZXIlMjBjdXR0aW5nJTIwaGFpcnxlbnwxfHx8fDE3NjI4NDkzNTd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                        alt="Barber cutting hair"
+                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                    />
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors"></div>
+                </div>
+                <div class="relative h-80 rounded-lg overflow-hidden group cursor-pointer">
+                    <img
+                        src="https://images.unsplash.com/photo-1627238772768-e3d0ccb1adb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiYXJiZXIlMjBzaG9wJTIwaW50ZXJpb3J8ZW58MXx8fHwxNzYyODcwNTQ1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                        alt="Barber shop interior"
+                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                    />
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 lg:px-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl mb-4">Book an Appointment</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Get in touch to schedule your visit or ask any questions
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm mb-2">Name</label>
+                            <input id="name" type="text" placeholder="Your full name" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-600" />
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm mb-2">Email</label>
+                            <input id="email" type="email" placeholder="your@email.com" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-600" />
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm mb-2">Phone</label>
+                            <input id="phone" type="tel" placeholder="(555) 123-4567" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-600" />
+                        </div>
+                        <div>
+                            <label for="service" class="block text-sm mb-2">Preferred Service</label>
+                            <input id="service" type="text" placeholder="e.g., Classic Cut, Premium Grooming" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-600" />
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm mb-2">Message</label>
+                            <textarea id="message" rows="4" placeholder="Tell us about your preferred date and time, or any special requests" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-600"></textarea>
+                        </div>
+                        <button type="submit" class="w-full inline-flex items-center justify-center rounded-md bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 transition">
+                            Send Booking Request
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="bg-white rounded-lg border shadow-sm p-6">
+                        <div class="flex items-start gap-4 mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-600 flex-shrink-0 mt-1">
+                                <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <div>
+                                <div class="mb-1">Address</div>
+                                <p class="text-gray-600">123 Main Street, Suite 100<br />Downtown, NY 10001</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4 mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-600 flex-shrink-0 mt-1">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            <div>
+                                <div class="mb-1">Phone</div>
+                                <p class="text-gray-600">(555) 123-4567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4 mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-600 flex-shrink-0 mt-1">
+                                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                            </svg>
+                            <div>
+                                <div class="mb-1">Email</div>
+                                <p class="text-gray-600">info@gentlemenscut.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-600 flex-shrink-0 mt-1">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            <div>
+                                <div class="mb-2">Hours</div>
+                                <div class="text-gray-600 space-y-1">
+                                    <p>Monday - Friday: 9am - 8pm</p>
+                                    <p>Saturday: 9am - 6pm</p>
+                                    <p>Sunday: 10am - 5pm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="h-64 bg-gray-200 rounded-lg overflow-hidden">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.11976369843746!3d40.69766374859258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1234567890123"
+                            width="100%"
+                            height="100%"
+                            style="border: 0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-6 lg:px-12">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="6" cy="6" r="3"></circle>
+                            <path d="M8.12 8.12 12 12"></path>
+                            <path d="M20 4 8.12 15.88"></path>
+                            <circle cx="6" cy="18" r="3"></circle>
+                            <path d="M14.8 14.8 20 20"></path>
+                        </svg>
+                        <span class="text-lg">The Gentlemen's Cut</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        Classic barbering meets modern style. Experience the difference.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#services" class="hover:text-amber-500 transition">Services</a></li>
+                        <li><a href="#about" class="hover:text-amber-500 transition">About Us</a></li>
+                        <li><a href="#pricing" class="hover:text-amber-500 transition">Pricing</a></li>
+                        <li><a href="#gallery" class="hover:text-amber-500 transition">Gallery</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg mb-4">Contact</h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li>123 Main Street, Suite 100</li>
+                        <li>Downtown, NY 10001</li>
+                        <li>(555) 123-4567</li>
+                        <li>info@gentlemenscut.com</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg mb-4">Follow Us</h3>
+                    <div class="flex gap-4">
+                        <a href="#" class="hover:text-amber-500 transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="hover:text-amber-500 transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" class="hover:text-amber-500 transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2025 The Gentlemen's Cut. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</style>
+
+</body>
+</html>
